@@ -1,0 +1,11 @@
+.cabecalho {
+    background-color: #AAA1C8;
+}
+    .cabecalho__titulo {
+        color: #D5C6E0;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 15px;
+        text-align: center;
+        
+    }
