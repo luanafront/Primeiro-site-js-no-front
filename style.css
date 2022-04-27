@@ -13,7 +13,9 @@ body {
         text-align: center;
         margin: 0;
     }
-.principal {}
+.principal {
+    background-color:#D5C6E0 ;
+}
     .principal__botoes {
         background-color: #D5C6E0;
         padding: 8px;
@@ -30,6 +32,7 @@ body {
     .principal__perfil {
         background-color: #F5E6E8;
         display: flex;
+        border-radius: 50px 50px 0 0;
     }
         .principal__imagem--perfil {
             height: 150px;

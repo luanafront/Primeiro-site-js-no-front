@@ -18,11 +18,10 @@ cabecalho.appendChild(cabecalhoTitulo)
 root.appendChild(cabecalho)
 
 //main 
-
-
 const principal = criarElemento("main" , "principal")
 root.appendChild(principal)
 
+//Primeira section do main - Botoes
 const sectionOpcoes = criarElemento("section", "section__Opcoes")
 principal.appendChild(sectionOpcoes)
 
@@ -36,6 +35,7 @@ for (let i = 0; i < principalBotoesLista.length; i++) {
     principalBotoes.appendChild(botao)
 }
 
+//Segunda section do main - Perfil
 const principalPerfil = criarElemento("section", "principal__perfil")
 principal.appendChild(principalPerfil)
 
@@ -51,11 +51,33 @@ textoDiv.appendChild(textoPerfil)
 const texto2Perfil = criarElemento("p", "div__texto2--perfil", "Desenvolvedora Front-End Junior")
 textoDiv.appendChild(texto2Perfil)
 
+//Terceira section do main - Feed
+const principalFeed = document.createElement("section", "section__feed")
+principalFeed.classList.add("principal__feed")
+principal.appendChild(principalFeed)
 
-// const principalFeed = document.createElement("section")
-// principalFeed.classList.add("principal__feed")
-// principal.appendChild(principalFeed)
+const feedTitulo = criarElemento("ul", "feed__titulo")
+principalFeed.appendChild(feedTitulo)
 
+const topicos = [
+    {titulo: "Quem sou?", texto: "bababbabbababbaba"},
+    {titulo: "Minhas Tecnologias", texto: "babababbabbababbab"},
+    {titulo: "Sites", texto: "babbababbababbabaa"},
+    {titulo: "Rede Sociais", texto:"abbabababababababab"}
+] 
+
+for(let i = 0; i < topicos.length; i++){
+    let opcao = criarElemento("li", "topico__opcao")
+    let titulo = topicos[i].titulo
+    let texto = topicos[i].texto
+
+    let topicoTitulo = criarElemento("h3", "topicos__topico--titulo", titulo)
+    let topicoTexto = criarElemento("p", "topicos__topico--texto", texto)
+
+    opcao.appendChild(topicoTitulo)
+    opcao.appendChild(topicoTexto)
+    feedTitulo.appendChild(opcao)
+}
 
 
 
