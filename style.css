@@ -26,5 +26,26 @@ body {
             margin: 0 ;
             color: #AAA1C8;
             font-size: 13px;
-
- 
+        }
+    .principal__perfil {
+        background-color: #F5E6E8;
+        display: flex;
+    }
+        .principal__imagem--perfil {
+            height: 150px;
+            border-radius: 81px;
+            margin: 15px
+        }
+        .texto__div{
+            margin: 57px 10px 0;
+        }
+            .div__texto--perfil {
+                font-size: 28px;
+                margin: 0;
+                color: #AAA1C8;
+            }
+            .div__texto2--perfil {
+                font-size: 13px;
+                margin: 0;
+                color: #AAA1C8;
+            }

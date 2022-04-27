@@ -39,12 +39,17 @@ for (let i = 0; i < principalBotoesLista.length; i++) {
 const principalPerfil = criarElemento("section", "principal__perfil")
 principal.appendChild(principalPerfil)
 
-const imagemPerfil = criarElemento("img", "imagem__perfil" )
+const imagemPerfil = criarElemento("img", "principal__imagem--perfil" )
 imagemPerfil.src = "./imagem-perfil.jfif"
 principalPerfil.appendChild(imagemPerfil)
 
-const textoPerfil = criarElemento("p", "Luana Medeiros")
-principalPerfil.appendChild(textoPerfil)
+const textoDiv = criarElemento("div", "texto__div")
+principalPerfil.appendChild(textoDiv)
+
+const textoPerfil = criarElemento("p", "div__texto--perfil", "Luana Medeiros")
+textoDiv.appendChild(textoPerfil)
+const texto2Perfil = criarElemento("p", "div__texto2--perfil", "Desenvolvedora Front-End Junior")
+textoDiv.appendChild(texto2Perfil)
 
 
 // const principalFeed = document.createElement("section")
