@@ -56,28 +56,14 @@ const principalFeed = document.createElement("section", "section__feed")
 principalFeed.classList.add("principal__feed")
 principal.appendChild(principalFeed)
 
-const feedTitulo = criarElemento("ul", "feed__titulo")
-principalFeed.appendChild(feedTitulo)
+//div quem sou
 
-const topicos = [
-    {titulo: "Quem sou?", texto: "Sou uma desenvolvedora apaixonada por tecnologia e por aprender. Decidir fazer transição de carreira em 2021 quando tive meu primeiro contato com a programação e desde então a programação tem me mudado e mudado a forma que vejo as coisas."},
-    {titulo: "Minhas Tecnologias", texto: "HTML, Css, JavaScript, Git, Github, BEM, Figma"},
-    {titulo: "Sites", texto: ""},
-] 
+const quemSou = criarElemento("div", "quem__sou")
+principalFeed.appendChild(quemSou)
 
-for(let i = 0; i < topicos.length; i++){
-    let opcao = criarElemento("li", "topico__opcao")
-    let titulo = topicos[i].titulo
-    let texto = topicos[i].texto
+const quemSouTitulo = criarElemento("h3", "quem__sou--titulo", "Quem sou?")
+quemSou.appendChild(quemSouTitulo)
 
-    let topicoTitulo = criarElemento("h3", "topicos__topico--titulo", titulo)
-    let topicoTexto = criarElemento("p", "topicos__topico--texto", texto)
-
-    opcao.appendChild(topicoTitulo)
-    opcao.appendChild(topicoTexto)
-    feedTitulo.appendChild(opcao)
-}
-
-
-
+const quemSouTexto = criarElemento("p","quem__sou--texto", "Sou uma desenvolvedora apaixonada por tecnologia e por aprender. Decidir fazer transição de carreira em 2021 quando tive meu primeiro contato com a programação e desde então a programação tem me mudado e mudado a forma que vejo as coisas.")
+quemSou.appendChild(quemSouTexto)
 

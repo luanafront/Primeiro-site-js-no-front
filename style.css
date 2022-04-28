@@ -55,22 +55,14 @@ body {
     .principal__feed {
         background-color: #F5E6E8;
     }
-        .feed__titulo{
-           padding: 13px;
-           margin: 0;
-        }
-        .topico__opcao {
-            margin: 0;
-            list-style:none;
-        }
-        .topicos__topico--titulo {
-            padding-left: 10px;
-            color:#7DC9D3;
-            font-weight:  100;
-            font-size: 20px;
-            margin: 7px
-        }
-        .topicos__topico--texto {
-            margin: 3px;
-            color: #AAA1C8;
-        }
+        .quem__sou{}
+            .quem__sou--titulo {
+                color:#7DC9D3;
+                font-weight:  100;
+                font-size: 20px;
+                margin: 0 0 0 20px;
+            }
+            .quem__sou--texto {
+                margin: 11px;
+                color: #AAA1C8;
+            }
