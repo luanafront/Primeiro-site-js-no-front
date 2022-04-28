@@ -60,10 +60,9 @@ const feedTitulo = criarElemento("ul", "feed__titulo")
 principalFeed.appendChild(feedTitulo)
 
 const topicos = [
-    {titulo: "Quem sou?", texto: "bababbabbababbaba"},
-    {titulo: "Minhas Tecnologias", texto: "babababbabbababbab"},
-    {titulo: "Sites", texto: "babbababbababbabaa"},
-    {titulo: "Rede Sociais", texto:"abbabababababababab"}
+    {titulo: "Quem sou?", texto: "Sou uma desenvolvedora apaixonada por tecnologia e por aprender. Decidir fazer transição de carreira em 2021 quando tive meu primeiro contato com a programação e desde então a programação tem me mudado e mudado a forma que vejo as coisas."},
+    {titulo: "Minhas Tecnologias", texto: "HTML, Css, JavaScript, Git, Github, BEM, Figma"},
+    {titulo: "Sites", texto: ""},
 ] 
 
 for(let i = 0; i < topicos.length; i++){
