@@ -67,3 +67,37 @@ quemSou.appendChild(quemSouTitulo)
 const quemSouTexto = criarElemento("p","quem__sou--texto", "Sou uma desenvolvedora apaixonada por tecnologia e por aprender. Decidir fazer transição de carreira em 2021 quando tive meu primeiro contato com a programação e desde então a programação tem me mudado e mudado a forma que vejo as coisas.")
 quemSou.appendChild(quemSouTexto)
 
+    //div minhas tecnologias
+const minhasTecnologias = criarElemento("div", "minhas__tecnologias")
+principalFeed.appendChild(minhasTecnologias)
+
+const minhasTecnologiasTitulo = criarElemento("h3", "minhas__tecnologias--titulo", "Minhas Tecnologias?")
+minhasTecnologias.appendChild(minhasTecnologiasTitulo)
+
+const minhasTecnologiasTexto = criarElemento("p","minhas__tecnologias--texto", "HTML, CSS, JavaScript, Git, Scrum, BEM, Figma, Github.")
+minhasTecnologias.appendChild(minhasTecnologiasTexto)
+
+
+        //ul das fotos das tecnologias 
+const opcoesTecnologias = criarElemento("ul", "lista__tecnologias")
+minhasTecnologias.appendChild(opcoesTecnologias)
+
+const opcaoTecnologias = ["./html.png", "./css.png", "./js.png", "./git.png", "./figma.png", "./github.png"]
+
+for(let i = 0; i < opcaoTecnologias.length ; i++){
+    let opcao = criarElemento("li", "opcao__tecnologias")
+
+    let opcaoImagens = criarElemento("img", "opcao__imagem")
+    opcaoImagens.src = opcaoTecnologias[i]
+
+    opcao.appendChild(opcaoImagens)
+    opcoesTecnologias.appendChild(opcao)
+}
+
+    //div sites
+const sites = criarElemento("div", "feed__sites")
+principalFeed.appendChild(sites)
+
+const sitesTitulo = criarElemento("h3", "sites__titulo", "Sites")
+sites.appendChild(sitesTitulo)
+

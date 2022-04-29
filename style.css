@@ -66,3 +66,34 @@ body {
                 margin: 11px;
                 color: #AAA1C8;
             }
+        .minhas__tecnologias{
+            margin-top: 50px;
+        }
+            .minhas__tecnologias--titulo{
+                color:#7DC9D3;
+                font-weight:  100;
+                font-size: 20px;
+                margin: 0 0 0 20px;
+            }
+            .minhas__tecnologias--texto{
+                margin: 11px;
+                color: #AAA1C8;
+            }
+            .lista__tecnologias {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 0;
+            }
+                .opcao__tecnologias {
+                    list-style: none;
+                }
+                .opcao__imagem {
+                    height: 30px;
+                }
+    .feed__sites {}
+        .sites__titulo {
+            color:#7DC9D3;
+            font-weight:  100;
+            font-size: 20px;
+            margin: 0 0 0 20px;
+        }
