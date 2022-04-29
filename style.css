@@ -67,7 +67,7 @@ body {
                 color: #AAA1C8;
             }
         .minhas__tecnologias{
-            margin-top: 50px;
+            margin-top: 40px;
         }
             .minhas__tecnologias--titulo{
                 color:#7DC9D3;
@@ -90,10 +90,28 @@ body {
                 .opcao__imagem {
                     height: 30px;
                 }
-    .feed__sites {}
+    .feed__sites {
+        margin-top: 40px;
+    }
         .sites__titulo {
             color:#7DC9D3;
             font-weight:  100;
             font-size: 20px;
             margin: 0 0 0 20px;
         }
+        .sites__opcoes {
+            display: flex;
+            padding: 0px;
+            overflow-x: scroll;
+            margin-top: 10px;
+            background-color: #D5C6E0; 
+        }
+            .opcao__sites {
+                list-style: none;
+                margin: 10px;
+            }
+                .opcao__imagem--sites {
+                    height: 250px;
+                }
+            
+    

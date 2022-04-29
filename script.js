@@ -101,3 +101,22 @@ principalFeed.appendChild(sites)
 const sitesTitulo = criarElemento("h3", "sites__titulo", "Sites")
 sites.appendChild(sitesTitulo)
 
+    //ul das series
+
+const opcoeSites = criarElemento("ul", "sites__opcoes")
+sites.appendChild(opcoeSites)
+
+const listaImagensSites = ["./imobiluana.jfif", "./site-series.jfif", "./petshopmilu.jfif",  "./delicias-sorriso.jfif", "./perfil.jfif", "./cadastro.jfif", "./cadastre-se.jfif", "./feed.jfif"]
+
+for(let i = 0; i < listaImagensSites.length ; i++){
+     let opcaoSites = criarElemento("li", "opcao__sites")
+
+    let opcaoImagensSites = criarElemento("img", "opcao__imagem--sites")
+    opcaoImagensSites.src = listaImagensSites[i]
+
+    opcaoSites.appendChild(opcaoImagensSites)
+    opcoeSites.appendChild(opcaoSites)
+ }
+
+
+
