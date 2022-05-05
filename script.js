@@ -111,6 +111,8 @@ function criarSectionFeed(principal){
 
     const redesTitulo = criarElemento("h3", "redes__titulo", "Redes Sociais")
     redesSocias.appendChild(redesTitulo)
+
+    
 }
 
 
