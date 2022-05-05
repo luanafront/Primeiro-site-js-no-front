@@ -1,8 +1,5 @@
 const root = document.getElementById("root")
 
-
-
-//funcao para atribuir elementos no Html
 function criarElemento(elementoHTML , classe = "", conteudo = ""){
     const elemento = document.createElement(elementoHTML)
     elemento.classList.add(classe)
@@ -31,7 +28,6 @@ function criarListaDeImagens (listaImagem, classLista, classItem, classImg){
     return lista
 }
 
-//Primeira section do main - Botoes
 function criarSectionOpcoes(principal){
     const sectionOpcoes = criarElemento("section", "section__Opcoes")
     principal.appendChild(sectionOpcoes)
@@ -48,13 +44,12 @@ function criarSectionOpcoes(principal){
 }
 
 
-//Segunda section do main - Perfil
 function criarSectionPerfil(principal){
     const principalPerfil = criarElemento("section", "principal__perfil")
     principal.appendChild(principalPerfil)
     
     const imagemPerfil = criarElemento("img", "principal__imagem--perfil" )
-    imagemPerfil.src = "./imagem-perfil.jfif"
+    imagemPerfil.src = "./assest/imagem-perfil.jfif"
     principalPerfil.appendChild(imagemPerfil)
     
     const textoDiv = criarElemento("div", "texto__div")
@@ -66,13 +61,11 @@ function criarSectionPerfil(principal){
     textoDiv.appendChild(texto2Perfil)
 }
 
-//Terceira section do main - Feed
 function criarSectionFeed(principal){
     const principalFeed = document.createElement("section", "section__feed")
     principalFeed.classList.add("principal__feed")
     principal.appendChild(principalFeed)
     
-    //div quem sou
     
     const quemSou = criarElemento("div", "quem__sou")
     principalFeed.appendChild(quemSou)
@@ -83,7 +76,7 @@ function criarSectionFeed(principal){
     const quemSouTexto = criarElemento("p","quem__sou--texto", "Sou uma desenvolvedora apaixonada por tecnologia e por aprender. Decidir fazer transição de carreira em 2021 quando tive meu primeiro contato com a programação e desde então a programação tem me mudado e mudado a forma que vejo as coisas.")
     quemSou.appendChild(quemSouTexto)
     
-        //div minhas tecnologias
+       
     const minhasTecnologias = criarElemento("div", "minhas__tecnologias")
     principalFeed.appendChild(minhasTecnologias)
     
@@ -92,33 +85,33 @@ function criarSectionFeed(principal){
     
     const minhasTecnologiasTexto = criarElemento("p","minhas__tecnologias--texto", "HTML, CSS, JavaScript, Git, Scrum, BEM, Figma, Github.")
     minhasTecnologias.appendChild(minhasTecnologiasTexto)
-    
-    
-            //ul das fotos das tecnologias 
             
     
     
-    const opcaoTecnologias = ["./html.png", "./css.png", "./js.png", "./git.png", "./figma.png", "./github.png"]
+    const opcaoTecnologias = ["./assest/html.png", "./assest/css.png", "./assest/js.png", "./assest/git.png", "./assest/figma.png", "./assest/github.png"]
     const opcoesTecnologias = criarListaDeImagens(opcaoTecnologias, "lista__tecnologias", "opcao__tecnologias", "opcao__imagem")
     minhasTecnologias.appendChild(opcoesTecnologias)
     
     
-        //div sites
     const sites = criarElemento("div", "feed__sites")
     principalFeed.appendChild(sites)
     
     const sitesTitulo = criarElemento("h3", "sites__titulo", "Sites")
     sites.appendChild(sitesTitulo)
     
-        //ul das series
     
-    const listaImagensSites = ["./imobiluana.jfif", "./site-series.jfif", "./petshopmilu.jfif",  "./delicias-sorriso.jfif", "./perfil.jfif", "./cadastro.jfif", "./cadastre-se.jfif", "./feed.jfif"]
+    const listaImagensSites = ["./assest/imobiluana.jfif", "./assest/site-series.jfif", "./assest/petshopmilu.jfif",  "./assest/delicias-sorriso.jfif", "./assest/perfil.jfif", "./assest/cadastro.jfif", "./assest/cadastre-se.jfif", "./assest/feed.jfif"]
     
     const opcoeSites = criarListaDeImagens(listaImagensSites, "sites__opcoes","opcao__sites", "opcao__imagem--sites")
     
     sites.appendChild(opcoeSites)
-}
 
+    const redesSocias = criarElemento("div", "principal__social",)
+    principalFeed.appendChild(redesSocias)
+
+    const redesTitulo = criarElemento("h3", "redes__titulo", "Redes Sociais")
+    redesSocias.appendChild(redesTitulo)
+}
 
 
 function criarMain (){
