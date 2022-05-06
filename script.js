@@ -10,7 +10,7 @@ function criarElemento(elementoHTML , classe = "", conteudo = ""){
 function criarCabecalho (){
     const cabecalho = criarElemento("header", "cabecalho")
      
-    const cabecalhoTitulo = criarElemento("h1", "cabecalho__titulo", "Meu primeiro site utilizando JavaScript no Front-End")
+    const cabecalhoTitulo = criarElemento("h1", "cabecalho__titulo", "Meu primeiro site utilizando DOM")
     cabecalho.appendChild(cabecalhoTitulo)
     root.appendChild(cabecalho)
 }
@@ -133,7 +133,6 @@ function criarMain (){
     criarSectionPerfil(principal)
     criarSectionFeed(principal)
 }
-
 
 
 function criarPaginaPrincipal(){
