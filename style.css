@@ -32,7 +32,7 @@ body {
     .principal__perfil {
         background-color: #F5E6E8;
         display: flex;
-        border-radius: 51px 50px 0 0;
+        border-radius: 50px 50px 0 0;
     }
         .principal__imagem--perfil {
             height: 150px;
@@ -89,6 +89,7 @@ body {
                 }
                 .opcao__imagem {
                     height: 30px;
+                
                 }
     .feed__sites {
         margin-top: 40px;
@@ -112,6 +113,7 @@ body {
             }
                 .opcao__imagem--sites {
                     height: 250px;
+                    border-radius: 0.3rem;
                 }
             
     .principal__social {
