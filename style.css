@@ -37,7 +37,7 @@ body {
         .principal__imagem--perfil {
             height: 150px;
             border-radius: 81px;
-            box-shadow: #463483 6px 13px 40px; 
+            box-shadow: #463483 5px 5px 20px;
             margin: 15px;     
         }
         
