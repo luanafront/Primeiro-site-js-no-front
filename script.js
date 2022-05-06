@@ -106,6 +106,8 @@ function criarSectionFeed(principal){
     
     sites.appendChild(opcoeSites)
 
+
+
     const redesSocias = criarElemento("div", "principal__social",)
     principalFeed.appendChild(redesSocias)
 
@@ -113,11 +115,18 @@ function criarSectionFeed(principal){
     redesSocias.appendChild(redesTitulo)
 
     const contatos = ["./assest/github.webp", "./assest/whasap.webp", "./assest/linkedin.webp", "./assest/instagram.webp", "./assest/gmail.webp"]
-    const opcoesContatos = criarListaDeImagens(contatos, "lista__contatos", "opcao__contatos", "opcao__imagem")
+    const opcoesContatos = criarListaDeImagens(contatos, "lista__contatos", "opcao__contatos", "opcao__imagem--contato")
     redesSocias.appendChild(opcoesContatos)
 }
     
 
+function criarRodape (){
+    const cabecalho = criarElemento("header", "cabecalho")
+     
+    const cabecalhoTitulo = criarElemento("h1", "cabecalho__titulo", "Meu primeiro site utilizando JavaScript no Front-End")
+    cabecalho.appendChild(cabecalhoTitulo)
+    root.appendChild(cabecalho)
+}
 
 
 function criarMain (){

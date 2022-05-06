@@ -114,9 +114,27 @@ body {
                     height: 250px;
                 }
             
-    .principal__social {}
-        .redes__titulo{}
-        .lista__contatos{}
-            .opcao__contatos {}
-            .opcao__imagem {}
-            
+    .principal__social {
+        margin-top: 40px;
+    }
+        .redes__titulo{
+            color: #7DC9D3;
+            font-weight: 100;
+            font-size: 20px;
+            margin: 0 0 0 20px;
+        }
+        .lista__contatos{
+            display: flex;
+            justify-content: center;
+            padding: 0px;
+            margin-top: 10px;
+            list-style: none;
+        }
+            .opcao__contatos {
+                margin-block: 1.5rem;
+            }
+            .opcao__imagem--contato {
+                margin-inline: 0.6rem;
+                width: 1.8rem;
+                height: 1.8rem;
+            }
