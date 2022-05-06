@@ -27,7 +27,7 @@ body {
         .principal__botoes--botao {
             margin: 0 ;
             color: #AAA1C8;
-            font-size: 13px;
+            font-size: 16px;
         }
     .principal__perfil {
         background-color: #d5c6e0;
@@ -37,20 +37,24 @@ body {
         .principal__imagem--perfil {
             height: 150px;
             border-radius: 81px;
-            margin: 15px
+            box-shadow: #463483 6px 13px 40px; 
+            margin: 15px;     
         }
+        
         .texto__div{
             margin: 57px 10px 0;
         }
             .div__texto--perfil {
                 font-size: 28px;
                 margin: 0;
-                color: #AAA1C8;
+                color: #AAA1C8;    
+                margin-left: 5px;
             }
             .div__texto2--perfil {
                 font-size: 13px;
                 margin: 0;
                 color: #AAA1C8;
+                margin-left: 5px;
             }
     .principal__feed {
         background-color: #F5E6E8;
@@ -63,6 +67,7 @@ body {
                 font-size: 20px;
                 margin: 0 0 0 20px;
                 padding-top:20px ;
+                
             }
             .quem__sou--texto {
                 margin: 11px;
