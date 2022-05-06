@@ -121,11 +121,8 @@ function criarSectionFeed(principal){
     
 
 function criarRodape (){
-    const cabecalho = criarElemento("header", "cabecalho")
-     
-    const cabecalhoTitulo = criarElemento("h1", "cabecalho__titulo", "Meu primeiro site utilizando JavaScript no Front-End")
-    cabecalho.appendChild(cabecalhoTitulo)
-    root.appendChild(cabecalho)
+    const rodape = criarElemento("footer", "rodape")
+    root.appendChild(rodape)
 }
 
 
@@ -142,6 +139,7 @@ function criarMain (){
 function criarPaginaPrincipal(){
     criarCabecalho()    
     criarMain()
+    criarRodape()
     
 }
 criarPaginaPrincipal()

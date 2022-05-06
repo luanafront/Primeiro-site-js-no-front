@@ -127,7 +127,7 @@ body {
             display: flex;
             justify-content: center;
             padding: 0px;
-            margin-top: 10px;
+            margin: 0;
             list-style: none;
         }
             .opcao__contatos {
@@ -138,3 +138,8 @@ body {
                 width: 1.8rem;
                 height: 1.8rem;
             }
+.rodape {
+    background-color: #D5C6E0;
+    padding: 1.5rem;
+    margin: 0;
+}
