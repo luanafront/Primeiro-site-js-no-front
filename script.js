@@ -116,7 +116,7 @@ function criarSectionFeed(principal){
 
     const contatos = ["./assest/github.webp", "./assest/whasap.webp", "./assest/linkedin.webp", "./assest/instagram.webp", "./assest/gmail.webp"]
     const opcoesContatos = criarListaDeImagens(contatos, "lista__contatos", "opcao__contatos", "opcao__imagem--contato")
-
+    principalFeed.append(opcoesContatos)
 }
     
 
