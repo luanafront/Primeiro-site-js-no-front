@@ -73,7 +73,7 @@ function criarSectionFeed(principal){
     const quemSouTitulo = criarElemento("h3", "quem__sou--titulo", "Quem sou?")
     quemSou.appendChild(quemSouTitulo)
     
-    const quemSouTexto = criarElemento("p","quem__sou--texto", "Sou uma desenvolvedora apaixonada por tecnologia e por aprender. Decidir fazer transição de carreira em 2021 quando tive meu primeiro contato com a programação e desde então a programação tem me mudado e mudado a forma que vejo as coisas.")
+    const quemSouTexto = criarElemento("p","quem__sou--texto", "Sou uma desenvolvedora apaixonada por tecnologia e por aprender. Decidi fazer transição de carreira em 2021 quando tive meu primeiro contato com a programação e desde então a programação tem me mudado e mudado a forma que vejo as coisas.")
     quemSou.appendChild(quemSouTexto)
     
        
