@@ -25,7 +25,7 @@ function criarListaDeImagens (listaImagem, classLista, classItem, classImg){
         opcao.appendChild(opcaoImagens)
         lista.appendChild(opcao)
     }
-    return lista
+    return lista 
 }
 
 function criarSectionOpcoes(principal){
