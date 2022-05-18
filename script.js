@@ -100,7 +100,17 @@ function criarSectionFeed(principal){
     sites.appendChild(sitesTitulo)
     
     
-    const listaImagensSites = ["./assest/imobiluana.jfif", "./assest/site-series.jfif", "./assest/petshopmilu.jfif",  "./assest/delicias-sorriso.jfif", "./assest/perfil.jfif", "./assest/cadastro.jfif", "./assest/cadastre-se.jfif", "./assest/feed.jfif"]
+    const listaImagensSites = [ 
+        "./assest/bloco-notas.jfif",
+        "./assest/imobiluana.jfif",
+        "./assest/site-series.jfif", 
+        "./assest/petshopmilu.jfif",  
+        "./assest/delicias-sorriso.jfif", 
+        "./assest/perfil.jfif", 
+        "./assest/cadastro.jfif", 
+        "./assest/cadastre-se.jfif", 
+        "./assest/feed.jfif"
+    ]
     
     const opcoeSites = criarListaDeImagens(listaImagensSites, "sites__opcoes","opcao__sites", "opcao__imagem--sites")
     
